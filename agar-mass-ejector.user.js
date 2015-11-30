@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         agar-mass-ejector
-// @namespace    http://github.com/dimotsai/
+// @namespace    https://github.com/GaryGentile
 // @version      0.03
 // @description  A faster, continuous mass ejector for agar.
-// @author       dimotsai
+// @author       Gary Gentile
 // @license      MIT
 // @match        http://agar.io/*
 // @grant        none
@@ -18,7 +18,7 @@
         if (evt.keyCode === 69) { // KEY_E
             for (var i = 0; i < amount; ++i) {
                 setTimeout(function() {
-                    window.onkeydown({keyCode: 87}); // KEY_W
+                    window.onkeydown({keyCode: 87}); // KEY_E
                     window.onkeyup({keyCode: 87});
                 }, i * duration);
             }
